@@ -82,24 +82,3 @@ Phone :
 </form>  
 </body>  
 </html>  
-<?php
-  extract($_REQUEST);
-  $file=fopen("form-x.txt","a");
-  fwrite($file,"First name :");
-  fwrite($file,$username ."\n");
-  fwrite($file,"Last name :");
-  fwrite($file,$Date ."\n");
-  fwrite($file,"Date :");
-  fwrite($file,$Religion ."\n");
-  fwrite($file,"Religion :");
-  fwrite($file,$phone ."\n");
-  fwrite($file,"phone :");
-  fwrite($file,$username ."\n");
-  fwrite($file,"username :");
-  fwrite($file,$password ."\n");
-  fwrite($file,"psw :");
-  fclose($file);
-
-
-
-?>
